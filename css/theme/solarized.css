@@ -146,3 +146,8 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #268bd2; }
+
+.loud {
+  font-size: 200%;
+  color: #DC322F;
+}
