@@ -11,11 +11,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
-
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js/dist/theme/solarized.css" id="theme">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -23,7 +20,7 @@
 				var link = document.createElement( 'link' );
 				link.rel = 'stylesheet';
 				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
+				link.href = 'reveal.js/css/print/pdf.css';
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
@@ -200,9 +197,6 @@
 						<h4 class="fragment roll-in">There is a good mobile data signal (ie 3G, 4G) in my place of work 11.79%</h4>
 					</section>
 					<section>
-						<iframe width="1000" height="700" src="http://bawmedical.co.uk/wifisurvey_mapping/"></iframe>
-					</section>
-					<section>
 						<h2>Summary</h2>
 						<h4 class="fragment roll-in">Definite improvement over last year's results</h4>
 						<h4 class="fragment roll-in">Still only 50% of clinical staff have access though</h4>
@@ -246,8 +240,7 @@
 		</div>
 		
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="reveal.js/dist/reveal.js"></script>
 		<script>
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -258,22 +251,16 @@
 				center: true,
  			    transitionSpeed: 'slow', // default/fast/slow
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-
 				// Parallax scrolling
 				parallaxBackgroundImage: 'img/1280px-Wi-Fi_transparency.svg.png',
 				parallaxBackgroundSize: '1166px 821px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 				]
 			});
 		</script>
